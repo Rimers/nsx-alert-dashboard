@@ -1,7 +1,7 @@
 # NSX-alert-Dashboard is used for VMware NSX microsegmentation projects to help handling the massive amount of traffic and add the rules accordingly.
 
 ## Installation
-1. Create virtual machine or docker lamp image
+1. Create virtual machine or docker lamp image (Could be like: https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-18-04-lamp/)
 2. GIT clone to the desired directory, may be /var/www/ or /var/www/html/ (git clone https://github.com/sorenisager/nsx-alert-dashboard)
 3. Change the config file with your desired settings
 4. Import SQL file into MariaDB/MySQL database to get it to work
