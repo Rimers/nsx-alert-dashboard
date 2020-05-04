@@ -6,6 +6,7 @@
 3. Change the config file with your desired settings
 4. Import SQL file into MariaDB/MySQL database to get it to work
 5. Test if it works, if not - check errors or let me help you.
+6. Setup cronjob against http://sitename/alerthandler.php ex. every minute
 
 For the NSX to send logs, please take a look at my blog on how to Microsegmentate.
 
