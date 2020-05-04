@@ -2,7 +2,7 @@
 
 ## Installation
 1. Create virtual machine or docker lamp image
-2. GIT clone to the desired directory, may be /var/www/ or /var/www/html/
+2. GIT clone to the desired directory, may be /var/www/ or /var/www/html/ (git clone https://github.com/sorenisager/nsx-alert-dashboard)
 3. Change the config file with your desired settings
 4. Import SQL file into MariaDB/MySQL database to get it to work
 5. Test if it works, if not - check errors or let me help you.
