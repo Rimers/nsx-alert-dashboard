@@ -7,8 +7,15 @@
 4. Import SQL file into MariaDB/MySQL database to get it to work
 5. Test if it works, if not - check errors or let me help you.
 6. Setup cronjob against http://sitename/alerthandler.php ex. every minute
+7. Add entries in the ReverseLookup file, so you can resolve the IP's in the log into servernames.
 
 For the NSX to send logs, please take a look at my blog on how to Microsegmentate.
+
+## ReverseLookup
+Gives the Option in the config file to reverse lookup hostnames in the Alerthandler. Loginsight is not sending the servernames in the logs, so we can reverselookup.
+
+Its a JSON file ex:
+"10.10.100.85": "dhcp-server"
 
 ## Security
 There is no page security at the moment added to the code, you may need to use .htaccess or other type of security to prevent others from seeing the applicationdata.
