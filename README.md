@@ -12,7 +12,7 @@
 For the NSX to send logs, please take a look at my blog on how to Microsegmentate.
 
 ## ReverseLookup
-Gives the Option in the config file to reverse lookup hostnames in the Alerthandler. Loginsight is not sending the servernames in the logs, so we can reverselookup.
+Gives the Option in the config file to reverse lookup ips into hostnames in the Alerthandler function. Loginsight is not sending the servernames in the logs. This helps us understand which system is affected at the alertdashboard directly.
 
 Its a JSON file ex:
 "10.10.100.85": "dhcp-server"
