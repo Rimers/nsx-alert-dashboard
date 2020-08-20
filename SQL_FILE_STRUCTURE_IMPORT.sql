@@ -1,3 +1,7 @@
+--
+-- Table structure for table `vrli_alerts`
+--
+
 CREATE TABLE `vrli_alerts` (
   `id` int(13) NOT NULL,
   `hostname` varchar(255) NOT NULL,
@@ -20,6 +24,15 @@ CREATE TABLE `vrli_alerts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+ALTER TABLE `vrli_alerts`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `vrli_alerts`
+  MODIFY `id` int(13) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+
+
 CREATE TABLE `vrli_webhook_inbound` (
   `id` int(13) NOT NULL,
   `data` text NOT NULL,
@@ -27,3 +40,11 @@ CREATE TABLE `vrli_webhook_inbound` (
   `updated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `state` enum('new','fixed','skipped') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `vrli_webhook_inbound`
+  ADD PRIMARY KEY (`id`);
+  
+ALTER TABLE `vrli_webhook_inbound`
+  MODIFY `id` int(13) NOT NULL AUTO_INCREMENT;
+COMMIT;
